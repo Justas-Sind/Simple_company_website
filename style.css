@@ -314,7 +314,6 @@ header {
   color: var(--clr-primary-4);
 }
 
-#team,
 #faq {
   height: 80vh;
 }
@@ -387,7 +386,7 @@ header {
 }
 
 /* services section */
-.gridContainer {
+#services .gridContainer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1rem;
@@ -425,6 +424,59 @@ header {
     transition: all 600ms 600ms;
   }
 }
+
+/* team section */
+#team .gridContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.person {
+  position: relative;
+  max-width: 200px;
+  margin-inline: auto;
+}
+
+.person-container {
+  aspect-ratio: 1 / 1.25;
+  display: grid;
+  align-items: end;
+  border-radius: 0 0 100vw 100vw;
+  overflow: hidden;
+  transition: transform 350ms ease;
+}
+
+.person-container:hover {
+  transform: scale(1.1);
+}
+
+.person img {
+  display:block;
+  max-width: 100%;
+}
+
+.person-circle {
+  position: absolute;
+  inset: auto 0 0;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  margin-inline: auto;
+  object-fit: cover;
+}
+
+.person-img {
+  position: relative;
+  z-index: 2;
+  transform: scale(1.2);
+  transition: transform 300ms ease;
+}
+
+.person-container:hover .person-img {
+  transform: scale(1.2) translateY(-1rem);
+}
+
 
 /* footer */
 footer {

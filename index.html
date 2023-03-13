@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Project</title>
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/faa518938e.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Styles/CSS -->
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <!-- javascript -->
+    <script src="./main.js" type="module"></script>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header id="home">
+      <!-- navigation bar -->
+      <nav id="nav">
+        <div class="nav-center">
+          <!-- nav header -->
+          <div class="nav-header">
+            <img src="./assets/images/logopic.webp" class="logo" alt="logo" />
+            <button class="nav-toggle">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+          <!-- links -->
+          <div class="links-container">
+            <ul class="links">
+              <li>
+                <a href="#home" class="scroll-link">home</a>
+              </li>
+              <li>
+                <a href="#about" class="scroll-link">about</a>
+              </li>
+              <li>
+                <a href="#services" class="scroll-link">services</a>
+              </li>
+              <li>
+                <a href="#team" class="scroll-link">team</a>
+              </li>
+              <li>
+                <a href="#faq" class="scroll-link">faq</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- social media -->
+          <ul class="social-icons">
+            <li>
+              <a href="https://www.facebook.com/">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/feed/">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- banner -->
+      <div class="banner">
+        <div class="container">
+          <h1>The Good Company</h1>
+          <p>The best of the best</p>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- ABOUT -->
+      <section id="about" class="section">
+        <div class="title">
+          <h2>about <span>us</span></h2>
+        </div>
+        <div class="aboutUsContainer sectionContainer">
+          <div class="hiddenAboutContainer">
+            <div class="imageContainer">
+              <img
+                src="./assets/images/spacex-tKs_2sBoqAg-unsplash.webp"
+                alt="rocket"
+              />
+            </div>
+            <div class="textContainer">
+              <h3>The Good Company is very good, etc.</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Reprehenderit, eum eveniet repellat sunt quia voluptatibus
+                mollitia veniam tempore sapiente asperiores suscipit cupiditate,
+                aut rerum facere delectus, quibusdam dignissimos. Voluptate,
+                veniam. Lorem ipsum, dolor sit amet consectetur adipisicing
+                elit. Eligendi tempore magnam, sequi beatae odit expedita esse
+                natus quos sint eaque et minima, dolor earum, doloribus
+                consectetur veritatis atque quas impedit.
+              </p>
+            </div>
+          </div>
+          <div class="hiddenAboutContainer">
+            <div class="imageContainer">
+              <img
+                src="./assets/images/spacex-VBNb52J8Trk-unsplash.webp"
+                alt="satellite"
+              />
+            </div>
+            <div class="textContainer">
+              <h3>Everyone tell us that we are the best there is...</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Reprehenderit, eum eveniet repellat sunt quia voluptatibus
+                mollitia veniam tempore sapiente asperiores suscipit cupiditate,
+                aut rerum facere delectus, quibusdam dignissimos. Voluptate,
+                veniam. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestias voluptates quisquam voluptas explicabo expedita
+                reiciendis soluta nemo fugit ducimus ullam voluptate nihil quis
+                rerum quod excepturi, alias ipsam hic. Ut!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SERVICES -->
+      <section id="services" class="section">
+        <div class="title">
+          <h2>our <span>services</span></h2>
+        </div>
+      </section>
+      <!-- TEAM -->
+      <section id="team" class="section">
+        <div class="title">
+          <h2>our <span>team</span></h2>
+        </div>
+      </section>
+      <!-- FAQ -->
+      <section id="faq" class="section">
+        <div class="title">
+          <h2>frequently asked <span>questions</span></h2>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="section">
+      <p>Copyright JS <span id="date"></span></p>
+    </footer>
+    <!-- Back to Top Button -->
+    <a href="#home" class="scroll-link top-link">
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
+  </body>
+</html>

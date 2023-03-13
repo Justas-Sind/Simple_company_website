@@ -349,7 +349,7 @@ header {
   opacity: 0;
   filter: blur(5px);
   transform: translateY(50px);
-  transition: all 800ms 300ms;
+  transition: all 700ms 300ms;
 }
 
 #about .shownContainer {
@@ -360,7 +360,7 @@ header {
 
 .hiddenAboutContainer .imageContainer {
   overflow: hidden;
-  border-radius: 1rem;
+  border-radius: 2rem;
   max-width: 380px;
 }
 
@@ -394,10 +394,10 @@ header {
 }
 
 .hiddenServiceCard {
-  transform: translateX(-100%);
+  transform: translateY(50px);
   opacity: 0;
   filter: blur(5px);
-  transition: all 800ms 300ms;
+  transition: all 600ms 200ms;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -411,7 +411,19 @@ header {
 #services .shownContainer {
   opacity: 1;
   filter: blur(0);
-  transform: translateX(0);
+  transform: translateY(0);
+}
+
+@media screen and (min-width: 992px) {
+  .hiddenServiceCard:nth-child(1) {
+    transition: all 600ms 200ms;
+  }
+  .hiddenServiceCard:nth-child(2) {
+    transition: all 600ms 400ms;
+  }
+  .hiddenServiceCard:nth-child(3) {
+    transition: all 600ms 600ms;
+  }
 }
 
 /* footer */

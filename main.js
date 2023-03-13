@@ -77,13 +77,15 @@ scrollLinks.forEach(function (link) {
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      entry.target.classList.add("shownAboutContainer");
+      entry.target.classList.add("shownContainer");
     }
   });
 });
 
-const hiddenElements = document.querySelectorAll(".hiddenAboutContainer");
-hiddenElements.forEach((el) => observer.observe(el));
+const hiddenAboutElements = document.querySelectorAll(".hiddenAboutContainer");
+const hiddenserviceElements = document.querySelectorAll(".hiddenServiceCard");
+hiddenAboutElements.forEach((el) => observer.observe(el));
+hiddenserviceElements.forEach((el) => observer.observe(el));
 
 // Auto date
 const date = document.getElementById("date");

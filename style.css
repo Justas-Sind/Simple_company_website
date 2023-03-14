@@ -331,9 +331,9 @@ header {
 
 .banner .container p {
   color: var(--clr-white);
-  max-width: 25rem;
+  max-width: 200px;
   margin: 0 auto;
-  margin-bottom: 1.25rem;
+  font-size: 1.15rem;
 }
 
 @media screen and (min-width: 768px) {

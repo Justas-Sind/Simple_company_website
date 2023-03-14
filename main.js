@@ -73,6 +73,34 @@ scrollLinks.forEach(function (link) {
   });
 });
 
+// services section
+bodymovin.loadAnimation({
+  container: document.querySelector('#serviceAnimation1'),
+  path: './assets/images/139-basket-outline-edited.json',
+  background: "transparent",
+  renderer: "svg",
+  loop: true,
+  autoplay: true
+})
+
+bodymovin.loadAnimation({
+  container: document.querySelector('#serviceAnimation2'),
+  path: './assets/images/409-tool-outline-edited.json',
+  background: "transparent",
+  renderer: "svg",
+  loop: true,
+  autoplay: true
+})
+
+bodymovin.loadAnimation({
+  container: document.querySelector('#serviceAnimation3'),
+  path: './assets/images/500-fingerprint-security-outline-edited.json',
+  background: "transparent",
+  renderer: "svg",
+  loop: true,
+  autoplay: true
+})
+
 // question section
 const questions = document.querySelectorAll(".animatedQuestion");
 

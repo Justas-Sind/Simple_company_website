@@ -449,6 +449,11 @@ header {
   transform: translateY(0);
 }
 
+.animationContainer {
+  width: 100px;
+  height: 100px;
+}
+
 @media screen and (min-width: 992px) {
   .animatedServiceCard:nth-child(1) {
     transition: all 600ms 200ms;

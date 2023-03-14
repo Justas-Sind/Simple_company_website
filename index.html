@@ -27,7 +27,7 @@
     <!-- Styles/CSS -->
     <link rel="stylesheet" type="text/css" href="./style.css" />
     <!-- javascript -->
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.2/lottie.min.js"></script>
     <script src="./main.js" type="module"></script>
   </head>
   <body>
@@ -147,17 +147,7 @@
         <div class="servicesContainer sectionContainer">
           <div class="gridContainer">
             <div class="animatedServiceCard">
-              <div class="animationContainer">
-                <lottie-player
-                  src="./assets/images/139-basket-outline-edited.json"
-                  background="transparent"
-                  speed="0.5"
-                  style="width: 100px; height: 100px"
-                  renderer="svg"
-                  loop
-                  autoplay
-                ></lottie-player>
-              </div>
+              <div class="animationContainer" id="serviceAnimation1"></div>
               <h3>Service 1</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -166,16 +156,7 @@
               </p>
             </div>
             <div class="animatedServiceCard">
-              <div class="animationContainer">
-                <lottie-player
-                  src="./assets/images/409-tool-outline-edited.json"
-                  background="transparent"
-                  speed="0.5"
-                  style="width: 100px; height: 100px"
-                  loop
-                  autoplay
-                ></lottie-player>
-              </div>
+              <div class="animationContainer" id="serviceAnimation2"></div>
               <h3>Service 2</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -183,16 +164,7 @@
               </p>
             </div>
             <div class="animatedServiceCard">
-              <div class="animationContainer">
-                <lottie-player
-                  src="./assets/images/500-fingerprint-security-outline-edited.json"
-                  background="transparent"
-                  speed="0.5"
-                  style="width: 100px; height: 100px"
-                  loop
-                  autoplay
-                ></lottie-player>
-              </div>
+              <div class="animationContainer" id="serviceAnimation3"></div>
               <h3>Service 3</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores

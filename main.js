@@ -73,6 +73,22 @@ scrollLinks.forEach(function (link) {
   });
 });
 
+// question section
+const questions = document.querySelectorAll(".animatedQuestion");
+
+questions.forEach((question) => {
+  const btn = question.querySelector(".question-btn");
+
+  btn.addEventListener("click", () => {
+    questions.forEach((item) => {
+      if (item !== question) {
+        item.classList.remove("show-text");
+      }
+    });
+    question.classList.toggle("show-text");
+  });
+});
+
 // Scroll animations / transitions
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
@@ -82,10 +98,19 @@ const observer = new IntersectionObserver((entries) => {
   });
 });
 
-const hiddenAboutElements = document.querySelectorAll(".hiddenAboutContainer");
-const hiddenserviceElements = document.querySelectorAll(".hiddenServiceCard");
-hiddenAboutElements.forEach((el) => observer.observe(el));
-hiddenserviceElements.forEach((el) => observer.observe(el));
+const animatedAboutElements = document.querySelectorAll(
+  ".animatedAboutContainer"
+);
+const animatedServiceElements = document.querySelectorAll(
+  ".animatedServiceCard"
+);
+const animatedTeamElements = document.querySelectorAll(".animatedPerson");
+const animatedQuestionElements = document.querySelectorAll(".animatedQuestion");
+
+animatedAboutElements.forEach((el) => observer.observe(el));
+animatedServiceElements.forEach((el) => observer.observe(el));
+animatedTeamElements.forEach((el) => observer.observe(el));
+animatedQuestionElements.forEach((el) => observer.observe(el));
 
 // Auto date
 const date = document.getElementById("date");

@@ -299,6 +299,7 @@ nav {
   }
   .social-icons {
     display: flex;
+    line-height: 0;
   }
   .social-icons a {
     margin: 0 0.5rem;
@@ -313,12 +314,14 @@ nav {
 /* banner */
 header {
   min-height: 100vh;
+  min-height: 100dvh;
   background: linear-gradient(rgba(97, 179, 217, 0.5), rgba(0, 0, 0, 0.7)),
     url(./assets/images/bannerpic.webp) center/cover no-repeat;
 }
 
 .banner {
   min-height: 100vh;
+  min-height: 100dvh;
   display: grid;
   place-items: center;
   text-align: center;
@@ -540,6 +543,21 @@ header {
   font-weight: 500;
 }
 
+@media screen and (min-width: 992px) {
+  .animatedPerson:nth-child(1) {
+    transition: all 600ms 200ms;
+  }
+  .animatedPerson:nth-child(2) {
+    transition: all 600ms 400ms;
+  }
+  .animatedPerson:nth-child(3) {
+    transition: all 600ms 600ms;
+  }
+  .animatedPerson:nth-child(4) {
+    transition: all 600ms 800ms;
+  }
+}
+
 /* faq section */
 
 .animatedQuestion {
@@ -550,8 +568,6 @@ header {
   box-shadow: var(--light-shadow);
   padding: 1.5rem 1.5rem 0 1.5rem;
   margin-bottom: 2rem;
-  display: flex;
-  flex-direction: column;
   transition: all 700ms 200ms;
 }
 
@@ -576,13 +592,17 @@ header {
 .question-btn {
   font-size: 1.5rem;
   background: transparent;
+  line-height: 0;
+  display: flex;
+  align-items: center;
   border-color: transparent;
   cursor: pointer;
   color: var(--clr-primary-5);
   transition: var(--transition);
 }
+
 .question-btn:hover {
-  transform: rotate(90deg);
+  transform: rotate(180deg);
 }
 .question-text {
   padding: 1rem 0 1.5rem 0;
@@ -590,6 +610,7 @@ header {
   transition: all 0s;
   visibility: hidden;
   position: absolute;
+  bottom: 0;
   opacity: 0;
 }
 
@@ -615,17 +636,43 @@ footer {
   padding: 2rem 1rem;
 }
 
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 footer p {
   color: var(--clr-white);
   text-transform: capitalize;
   letter-spacing: var(--spacing);
 }
 
+.social-footer {
+  display: flex;
+  line-height: 0;
+}
+.social-footer a {
+  margin: 0 0.5rem;
+  color: var(--clr-white);
+  transition: var(--transition);
+}
+.social-footer a:hover {
+  color: var(--clr-primary-5);
+}
+
+@media screen and (min-width: 992px) {
+  .footerContainer {
+    margin: 0 auto;
+    max-width: var(--max-screen-width);
+  }
+}
+
 /* scroll button */
 .top-link {
   font-size: 1.25rem;
   position: fixed;
-  bottom: 3rem;
+  bottom: 6rem;
   right: 3rem;
   background: var(--clr-primary-4);
   width: 2rem;

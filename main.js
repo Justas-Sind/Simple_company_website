@@ -145,3 +145,12 @@ animatedQuestionElements.forEach((el) => observer.observe(el));
 // Auto date
 const date = document.getElementById("date");
 date.innerHTML = new Date().getFullYear();
+
+const waveLoader = document.querySelector('.waveLoaderBg');
+
+document.onreadystatechange = () => {
+  if (document.readyState === 'complete') {
+    waveLoader.classList.add('displayNone');
+    document.body.classList.remove('overFlowHidden');
+  }
+};

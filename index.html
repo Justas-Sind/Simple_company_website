@@ -16,8 +16,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="preload"
+      as="style"
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;700&display=swap"
+    />
+    <link
       rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;700&display=swap"
     />
     <!-- Styles/CSS -->
     <link rel="stylesheet" type="text/css" href="./style.css" />
@@ -25,7 +30,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.2/lottie.min.js"></script>
     <script src="./main.js" type="module"></script>
   </head>
-  <body>
+  <body class="overFlowHidden">
     <!-- HEADER -->
     <header id="home">
       <!-- navigation bar -->
@@ -138,6 +143,7 @@
               <img
                 src="./assets/images/spacex-tKs_2sBoqAg-unsplash.webp"
                 alt="rocket"
+                loading="lazy"
               />
             </div>
             <div class="textContainer">
@@ -157,6 +163,7 @@
               <img
                 src="./assets/images/spacex-VBNb52J8Trk-unsplash.webp"
                 alt="satellite"
+                loading="lazy"
               />
             </div>
             <div class="textContainer">
@@ -221,6 +228,7 @@
                   class="person-circle"
                   src="./assets/images/sina-bahar-CjENjmBrdwg-unsplash.webp"
                   alt=""
+                  loading="lazy"
                 />
                 <img
                   class="person-img"
@@ -237,6 +245,7 @@
                   class="person-circle"
                   src="./assets/images/omid-armin-d4aCqn3mdZQ-unsplash.webp"
                   alt=""
+                  loading="lazy"
                 />
                 <img
                   class="person-img"
@@ -253,6 +262,7 @@
                   class="person-circle"
                   src="./assets/images/omid-armin-TkEWozPJi5U-unsplash.webp"
                   alt=""
+                  loading="lazy"
                 />
                 <img
                   class="person-img"
@@ -269,6 +279,7 @@
                   class="person-circle"
                   src="./assets/images/omid-armin-VxcLk9_ya04-unsplash.webp"
                   alt=""
+                  loading="lazy"
                 />
                 <img
                   class="person-img"
@@ -506,5 +517,7 @@
         ></path>
       </svg>
     </a>
+    <!-- Loader animation -->
+    <div class="waveLoaderBg"><div class="waveLoader"></div></div>
   </body>
 </html>
